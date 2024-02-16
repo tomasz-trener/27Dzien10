@@ -91,6 +91,7 @@
     <Content Include="css\stylePodstawowe.css" />
     <Content Include="Default.aspx" />
     <Content Include="images\loading.gif" />
+    <Content Include="jsLib\ZapisywanieZawodnikow.js" />
     <Content Include="jsLib\UsuwanieZawodnikow.js" />
     <Content Include="jsLib\WyszukiwarkaZawodnikow.js" />
     <Content Include="services\UsunZawodnika.aspx" />
