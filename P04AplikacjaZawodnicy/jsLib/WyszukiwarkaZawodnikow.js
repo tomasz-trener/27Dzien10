@@ -1,7 +1,7 @@
 
 $(document).ready(function () {
 
-
+    wyszukaj();
     $("#txtSzukaj").on("keypress", function (e) {
 
         if (e.which == 13) {
@@ -33,6 +33,13 @@ $(document).ready(function () {
 
             });
     }
+
+    if (window.location.href.indexOf("TabelaZawodnikowGlowny.aspx") > -1) {
+        setInterval(function () {
+            wyszukaj();
+        }, 5000);
+    }
+   
 
 
 });

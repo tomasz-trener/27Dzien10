@@ -7,7 +7,7 @@
 
     <div class="row">
         <div class="col-md-12">
-            <div class="card">
+     <%--  w momencie gdy mamy wyszukiwanie to tego nie potrzebujemy      <div class="card">
                 <div class="card-header">
                     <h4 class="card-title">Zawodnicy</h4>
                 </div>
@@ -66,7 +66,7 @@
 
                     </div>
                 </div>
-            </div>
+            </div>--%>
         </div>
 
     </div>

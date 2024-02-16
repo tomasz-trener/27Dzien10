@@ -16,7 +16,7 @@ namespace P04AplikacjaZawodnicy.services
         public Zawodnik[] Zawodnicy { get; set; } = new Zawodnik[0];
         protected void Page_Load(object sender, EventArgs e)
         {
-            Thread.Sleep(4000);
+            Thread.Sleep(500);
             IManagerZawodnikow mz = new ManagerZawodnikowLINQ();
 
             string szukanaFraza = Request["fraza"];
