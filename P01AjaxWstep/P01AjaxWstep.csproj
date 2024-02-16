@@ -84,6 +84,7 @@
     <Compile Include="serv\Obliczenia.aspx.designer.cs">
       <DependentUpon>Obliczenia.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Wynik.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

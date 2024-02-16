@@ -16,8 +16,14 @@ $(document).ready(function () {
             data: { liczba1: liczba1, liczba2:liczba2 }
         })
             .done(function (msg) {
-                //alert("Data Saved: " + msg);
-               $('#txtWynik').val(msg);
+                alert("Data Saved: " + msg);
+                // $('#txtWynik').val(msg);
+
+                var obj = JSON.parse(msg);
+
+                $('#txtWynik1').val(obj.WynikWlasciwy);
+                $('#txtWynik2').val(obj.LiczbaZnakow);
+                $('#txtWynik3').val(obj.Napis);
             });
 
 
