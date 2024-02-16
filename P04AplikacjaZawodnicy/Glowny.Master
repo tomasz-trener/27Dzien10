@@ -229,7 +229,7 @@
   <script src="../assets/demo/demo.js"></script>
 
     <script src="jsLib/WyszukiwarkaZawodnikow.js"></script>
-    <script src="jsLib/UsuwanieZawodnikow.js"></script>
+    
     <script src="jsLib/ZapisywanieZawodnikow.js"></script>
 </body>
 

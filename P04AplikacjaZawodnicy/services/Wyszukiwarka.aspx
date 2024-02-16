@@ -53,3 +53,4 @@
         </div>
     </div>
 </div>
+ <script src="jsLib/UsuwanieZawodnikow.js"></script>

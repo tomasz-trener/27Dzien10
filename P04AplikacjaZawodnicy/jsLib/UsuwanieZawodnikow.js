@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     
     $(".btn-danger").on("click", function () {
-
+        
         //musimy odczytac ktory zaostal klikniety 
         var idUsuwanego = $(this).data("id");
 

@@ -1,3 +1,5 @@
+/// <reference path="usuwaniezawodnikow.js" />
+/// <reference path="usuwaniezawodnikow.js" />
 
 $(document).ready(function () {
 
