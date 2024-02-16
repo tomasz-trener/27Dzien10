@@ -96,6 +96,7 @@
     <Content Include="jsLib\WyszukiwarkaZawodnikow.js" />
     <Content Include="services\UsunZawodnika.aspx" />
     <Content Include="services\Wyszukiwarka.aspx" />
+    <Content Include="services\ZapiszZawodnika.aspx" />
     <Content Include="SzczegolyZawodnikaGlowny.aspx" />
     <Content Include="TabelaDashboardBezMaster.aspx" />
     <Content Include="TabelaZawodnikowGlowny.aspx" />
@@ -130,6 +131,13 @@
     </Compile>
     <Compile Include="services\Wyszukiwarka.aspx.designer.cs">
       <DependentUpon>Wyszukiwarka.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="services\ZapiszZawodnika.aspx.cs">
+      <DependentUpon>ZapiszZawodnika.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="services\ZapiszZawodnika.aspx.designer.cs">
+      <DependentUpon>ZapiszZawodnika.aspx</DependentUpon>
     </Compile>
     <Compile Include="SzczegolyZawodnikaGlowny.aspx.cs">
       <DependentUpon>SzczegolyZawodnikaGlowny.aspx</DependentUpon>

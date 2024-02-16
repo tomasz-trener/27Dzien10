@@ -5,17 +5,18 @@ $(document).ready(function () {
 
 
     
-    $("#btnAjaxZapisz").on("click", function () {
-
+    $("#btnAjaxZapisz").on("click", function (e) {
+        e.preventDefault();
+        debugger;
         //zbieranie danych z formularza 
-        var id = $('#txtId').val();
-        var imie = $('txtImie').val();
-        var nazwisko = $('txtNazwisko').val();
-        var kraj= $('txtKraj').val();
-        var dataUr = $('txtDataUr').val();
-        var wzrost = $('txtWzrost').val();
-        var waga= $('txtWaga').val();
-        var trenerId = $('#ddlTrener').val();
+        var id = $('#glownyObszar_txtId').val();
+        var imie = $('#glownyObszar_txtImie').val();
+        var nazwisko = $('#glownyObszar_txtNazwisko').val();
+        var kraj = $('#glownyObszar_txtKraj').val();
+        var dataUr = $('#glownyObszar_txtDataUr').val();
+        var wzrost = $('#glownyObszar_txtWzrost').val();
+        var waga = $('#glownyObszar_txtWaga').val();
+        var trenerId = $('#glownyObszar_ddlTrener').val();
 
         $.ajax({
             method: "POST",
