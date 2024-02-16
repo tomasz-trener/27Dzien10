@@ -40,7 +40,8 @@
                             <td><%= z.DataUrodzenia?.ToString("dd-MM-yyyy") %></td>
                             <td><%= z.Wzrost %></td>
                             <td><%= z.Waga %></td>
-                            <td><a class="btn btn-danger" href="TabelaZawodnikowGlowny.aspx?idUsuwanego=<%= z.Id_zawodnika %>">X</a></td>
+                            <%--<td><a class="btn btn-danger" href="TabelaZawodnikowGlowny.aspx?idUsuwanego=<%= z.Id_zawodnika %>">X</a></td>--%>
+                            <td><button class="btn btn-danger" data-id="<%= z.Id_zawodnika %>">X</button></td>
                         </tr>
 
                         <%   }

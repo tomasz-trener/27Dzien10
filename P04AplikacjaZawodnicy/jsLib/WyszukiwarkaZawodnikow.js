@@ -8,7 +8,6 @@ $(document).ready(function () {
             e.preventDefault();
             wyszukaj();
         }
-
     });
 
     $("#btnSzukaj").on("click", function () {

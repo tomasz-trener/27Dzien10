@@ -1,0 +1,11 @@
+
+1) wczoraj bazowalismy na kontrolkach aspx , ktore aby wykonac akcjê musia³y odswiezyc strone 
+2) dzisiaj pracujemy z javascript , ajax i wysylamy ¿adania http asynchronicznie 
+
+3) Index.html - pokazlismy, jak uzywajac tylko javascript wykonac operacje po stronie klienta 
+4) StronaAjax.html - pokazalismy jak uzywajac javascript oraz jaxa wyslac ¿¹danie na server asyncrhocznie 
+5) dodaliœmy obs³uge jaxa w naszej g³ównej aplikacji 
+	- dodaliœmy opcjê filtrowania 
+	- usuwania
+	- edycja
+	- odœwie¿ania 
