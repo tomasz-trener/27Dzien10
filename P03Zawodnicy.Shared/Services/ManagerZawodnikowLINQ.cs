@@ -189,5 +189,27 @@ namespace P04Zawodnicy.Shared.Services
             var z = new ModelBazyDataContext(connString).ZawodnikDb.FirstOrDefault(x => x.id_zawodnika == id);
             return mapujZawodnikow(z).FirstOrDefault();
         }
+
+        public Zawodnik[] PodajZawodnikowFiltr(string szukanaFraza)
+        {
+            szukanaFraza = szukanaFraza.ToLower();
+            var db = new ModelBazyDataContext(connString);
+
+            var zawodnicy = db.ZawodnikDb
+                .Where(x =>
+                    x.imie.ToLower().Contains(szukanaFraza) ||
+                    x.nazwisko.ToLower().Contains(szukanaFraza) ||
+                    x.kraj.ToLower().Contains(szukanaFraza) ||
+              //      (x.data_ur.HasValue && x.data_ur.Value.ToString("ddMMyyyy").Contains(szukanaFraza)) ||
+                    (x.wzrost.HasValue && x.wzrost.ToString().Contains(szukanaFraza)) ||
+                    (x.waga.HasValue && x.waga.ToString().Contains(szukanaFraza)))
+                .ToArray();
+
+            //teraz działa bo to polecenie wykonuje się lokalnie 
+            zawodnicy = zawodnicy.Where(x => (x.data_ur.HasValue && x.data_ur.Value.ToString("ddMMyyyy").Contains(szukanaFraza))).ToArray();
+            // gdy korzystamy z niestandardowej funkcji w c#, która nie ma odpowiednika w sql to możemy to polecenie wykonać lokalnie 
+
+            return mapujZawodnikow(zawodnicy);
+        }
     }
 }

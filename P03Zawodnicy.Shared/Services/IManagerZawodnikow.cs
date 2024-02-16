@@ -35,6 +35,8 @@ namespace P03Zawodnicy.Shared.Services
         GrupaKraju[] PodajSredniWzrostDlaKazdegoKraju();
 
         Zawodnik PodajZawodnika(int id);
+
+        Zawodnik[] PodajZawodnikowFiltr(string szukanaFraza);
          
     }
 }

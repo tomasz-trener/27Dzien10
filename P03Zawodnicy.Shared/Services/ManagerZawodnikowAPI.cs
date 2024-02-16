@@ -58,6 +58,11 @@ namespace P03Zawodnicy.Shared.Services
             throw new NotImplementedException();
         }
 
+        public Zawodnik[] PodajZawodnikowFiltr(string szukanaFraza)
+        {
+            throw new NotImplementedException();
+        }
+
         public void PosorotujZawodnikowPoNazwisku(Zawodnik[] posortowaniZawodnicy)
         {
             throw new NotImplementedException();
