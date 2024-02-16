@@ -135,7 +135,7 @@
             <form>
               <div class="input-group no-border">
                 <input id="txtSzukaj" type="text" value="" class="form-control" placeholder="Search...">
-                <div id="btnSzukaj" class="input-group-append">
+                <div id="btnSzukaj" style="cursor:pointer" class="input-group-append">
                   <div class="input-group-text">
                     <i class="now-ui-icons ui-1_zoom-bold"></i>
                   </div>

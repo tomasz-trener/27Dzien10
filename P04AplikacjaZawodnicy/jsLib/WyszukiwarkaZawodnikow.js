@@ -1,6 +1,16 @@
 
 $(document).ready(function () {
 
+
+    $("#txtSzukaj").on("keypress", function (e) {
+
+        if (e.which == 13) {
+            e.preventDefault();
+            wyszukaj();
+        }
+
+    });
+
     $("#btnSzukaj").on("click", function () {
         wyszukaj();
     });
