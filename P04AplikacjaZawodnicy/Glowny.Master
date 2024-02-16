@@ -41,6 +41,11 @@
 </head>
 
 <body class="">
+
+    <div style="display:none" id="dvLadowanieContainer">
+        <img style="width:50px" src="images/loading.gif" />
+    </div>
+
   <div class="wrapper ">
     <div class="sidebar" data-color="orange">
       <!--

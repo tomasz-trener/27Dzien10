@@ -8,6 +8,8 @@ $(document).ready(function () {
     function wyszukaj() {
         var wartoscZInputa = $('#txtSzukaj').val();
 
+        var obrazek = $("#dvLadowanieContainer").html();
+        $("#dvKontenerTabelki").html(obrazek);
 
         $.ajax({
             method: "POST",
