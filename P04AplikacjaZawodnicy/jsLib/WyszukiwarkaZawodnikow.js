@@ -15,7 +15,10 @@ $(document).ready(function () {
             data: { fraza: wartoscZInputa }
         })
             .done(function (msg) {
-                alert(msg);
+                //  alert(msg);
+
+                $("#main-panel > div.content > div > div").html(msg);
+
             });
     }
 

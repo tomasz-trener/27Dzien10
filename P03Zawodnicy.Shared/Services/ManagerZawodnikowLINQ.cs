@@ -200,15 +200,18 @@ namespace P04Zawodnicy.Shared.Services
                     x.imie.ToLower().Contains(szukanaFraza) ||
                     x.nazwisko.ToLower().Contains(szukanaFraza) ||
                     x.kraj.ToLower().Contains(szukanaFraza) ||
-              //      (x.data_ur.HasValue && x.data_ur.Value.ToString("ddMMyyyy").Contains(szukanaFraza)) ||
+                    (x.data_ur.HasValue && x.data_ur.Value.Year.ToString().Contains(szukanaFraza)) ||
+                    (x.data_ur.HasValue && x.data_ur.Value.Month.ToString().Contains(szukanaFraza)) ||
+                    (x.data_ur.HasValue && x.data_ur.Value.Day.ToString().Contains(szukanaFraza)) ||
                     (x.wzrost.HasValue && x.wzrost.ToString().Contains(szukanaFraza)) ||
                     (x.waga.HasValue && x.waga.ToString().Contains(szukanaFraza)))
                 .ToArray();
 
-            //teraz działa bo to polecenie wykonuje się lokalnie 
-            zawodnicy = zawodnicy.Where(x => (x.data_ur.HasValue && x.data_ur.Value.ToString("ddMMyyyy").Contains(szukanaFraza))).ToArray();
-            // gdy korzystamy z niestandardowej funkcji w c#, która nie ma odpowiednika w sql to możemy to polecenie wykonać lokalnie 
 
+            //teraz działa bo to polecenie wykonuje się lokalnie 
+           // zawodnicy = zawodnicy.Where(x => (x.data_ur.HasValue && x.data_ur.Value.ToString("ddMMyyyy").Contains(szukanaFraza))).ToArray();
+            // gdy korzystamy z niestandardowej funkcji w c#, która nie ma odpowiednika w sql to możemy to polecenie wykonać lokalnie 
+            // to nie zdziała bo ten filtr zadziała jak AND a my chcemy skonstrruować jak operator OR
             return mapujZawodnikow(zawodnicy);
         }
     }
